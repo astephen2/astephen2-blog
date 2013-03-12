@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Test Post"
+date: 2013-02-09 21:05
+comments: true
+categories: Test Posts
+---
+This is a test post. Real content coming soon!
