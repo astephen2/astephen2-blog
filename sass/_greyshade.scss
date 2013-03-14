@@ -233,6 +233,7 @@ body {
 
 a {
 	color: $greyshade;
+
 }
 
 a:hover {
@@ -291,8 +292,54 @@ body {
 }
 
 .sidetext{
+	line-height: 1.35;
+	font-family: "Habibi", serif;
+	color: #efefef;
+	
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+}
+#sidetext1:hover{
+	color: #0B486B;
+	
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+#sidetext2:hover{
+	color: #542437;
+	
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
 
 }
+
+#sidetext3:hover{
+	color: #0D6759;
+	
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+
+}
+#sidetext4:hover{
+	color: #FEB870;
+	
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+
+}
+
+
 .title{
 	font-family: "Habibi", serif;
 }

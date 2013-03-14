@@ -3,7 +3,7 @@ layout: post
 title: "Dropbox for SSH"
 date: 2013-02-18 23:52
 comments: true
-categories: 
+categories: ["Technical", "Linux"]
 ---
 At the university level, a serious problem occurs when you want to code on your computer: you have to compile it elsewhere. The official university complier might be newer, older, or you just want to be super safe. So what do you do? You could either:
 	- Use a flash drive (so low tech)
