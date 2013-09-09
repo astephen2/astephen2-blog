@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <title>A Pelican Blog - linux</title>
+        <link rel="stylesheet" href="/theme/css/main.css">
+                <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="A Pelican Blog Atom Feed" />
+                
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">A Pelican Blog </a></h1>
+                <nav><ul>
+                                                                                    <li ><a href="/category/posts.html">Posts</a></li>
+                                                </ul></nav>
+        </header><!-- /#banner -->
+                
+            
+
+                            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/dropbox-ssh.html">Dropbox for SSH</a></h1> 
+                    <footer class="post-info">
+        <abbr class="published" title="2013-02-18T21:05:00">
+                Mon 18 February 2013
+        </abbr>
+
+                <address class="vcard author">
+                By <a class="url fn" href="/author/alex-stephen.html">Alex Stephen</a>
+        </address>
+        <p>In <a href="/category/posts.html">Posts</a>. </p>
+<p>tags: <a href="/tag/technical.html">technical</a><a href="/tag/linux.html">linux</a></p>
+</footer><!-- /.post-info --><p>At the university level, a serious problem occurs when you want to code on your computer: you have to compile it elsewhere. The official university complier might be newer, older, or you just want to be super safe. So what do you do? You could either:
+    - Use a flash drive (so low tech)
+    - Not code on your laptop (not gonna happen)
+    - Treat your University File System as a Local Drive</p>
+<p>Enter sshfs. You can mount any remote file system over ssh and then treat it as if it were a separate hard drive. Think Dropbox for anything. So how does one set it up?
+First:
+    :::bash
+    brew install sshfs</p>
+<p>On a Mac, that'll get you installed. Not using Homebrew? Fix that.</p>
+<p>Next comes the incredibly lengthy command. I'm gonna break it up into parts:
+    :::bash
+    sshfs hostname:location_on_host mount_point</p>
+<p>One step at a time.
+Hostname: This is what you're ssh'ing into. Think username@server.</p>
+<p>Location_on_host: What folder do you want to access? This is the path to that directory. Find the directory you want to access remotely and grab the pwd.</p>
+<p>mount_point: You need a folder on your machine to act as a mirror. Nothing will be placed into this folder. But, when sshfs is going, this mount_point folder is going to be your portal into the remote folder. That means that the remote folder /Users/test/test2 becomes mount_point on your local machine. Whatever you do on mount_point happens to /Users/test/test2</p>
+<p>That's it. Check mount_point and you'll see your remote folder.</p>
+<p>All done? Don't forget to unmount it.
+    :::bash
+    umount mount_point</p>
+<p>Enjoy.</p>                </article>
+                                                                </aside><!-- /#featured -->
+                                                </ol><!-- /#posts-list -->
+                        </section><!-- /#content -->
+                    <section id="extras" class="body">
+                                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                            
+                                                </ul>
+                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog</title><link href="/" rel="alternate"></link><link href="/feeds/posts.atom.xml" rel="self"></link><id>/</id><updated>2013-03-13T00:02:00Z</updated><entry><title>Favicons</title><link href="/favicons.html" rel="alternate"></link><updated>2013-03-13T00:02:00Z</updated><author><name>Alex Stephen</name></author><id>tag:,2013-03-13:favicons.html</id><summary type="html">&lt;p&gt;They're really the most utilized, least appreciated part of a good website. The favicon. Being visual creatures, the favicon is how we quickly sort tabs. They're close to (if not) the most important branding statement of a website, yet nobody ever gives them their due credit. Being the near narcissist I am, I'd like to dedicate some space to the only decent design work I've ever done and where the inspiration came from.&lt;/p&gt;
+&lt;p&gt;First, I'd like to mention how complex the favicon has become. Initially, the favicon was a 16x16 icon file. Then came the png icons, which can use basically any size. Then comes the iOS devices, which of course need a iPhone and iPad icon (technically both retina and non-retina). Finally, Windows 8 comes into the mix with a tile icon. That's 5 files if you're following.&lt;/p&gt;
+&lt;p&gt;Props to &lt;a href="http://www.jonathantneal.com/blog/understand-the-favicon/"&gt;this amazing article&lt;/a&gt; for the help and the history.&lt;/p&gt;
+&lt;p&gt;Now, the favicon.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="ain't she beautiful" src="/static/images/favicon.png" /&gt;&lt;/p&gt;
+&lt;p&gt;There were two distinct obstacles that had to be overcome. First, my design chops. Second, the amount of information that could be contained in 256 pixels. And third, my design chops. The inspiration came from genetics. Back in high school, most people learn about genetics in a high school biology class. When they learn about dominant and recessive genes, they associate them with R and r respectively. That kinda dawned on me. When a person has both a dominant and recessive gene, their genotype is displayed as Rr. Typographically, it looks really neat with the right font. And plus there's a very profound statement about bridging the dichotomy between life and programming... or something like that. As soon as I have it solidified, that'll be my new reason.&lt;/p&gt;</summary><category term="design"></category></entry><entry><title>Dropbox for SSH</title><link href="/dropbox-ssh.html" rel="alternate"></link><updated>2013-02-18T21:05:00Z</updated><author><name>Alex Stephen</name></author><id>tag:,2013-02-18:dropbox-ssh.html</id><summary type="html">&lt;p&gt;At the university level, a serious problem occurs when you want to code on your computer: you have to compile it elsewhere. The official university complier might be newer, older, or you just want to be super safe. So what do you do? You could either:
+    - Use a flash drive (so low tech)
+    - Not code on your laptop (not gonna happen)
+    - Treat your University File System as a Local Drive&lt;/p&gt;
+&lt;p&gt;Enter sshfs. You can mount any remote file system over ssh and then treat it as if it were a separate hard drive. Think Dropbox for anything. So how does one set it up?
+First:
+    :::bash
+    brew install sshfs&lt;/p&gt;
+&lt;p&gt;On a Mac, that'll get you installed. Not using Homebrew? Fix that.&lt;/p&gt;
+&lt;p&gt;Next comes the incredibly lengthy command. I'm gonna break it up into parts:
+    :::bash
+    sshfs hostname:location_on_host mount_point&lt;/p&gt;
+&lt;p&gt;One step at a time.
+Hostname: This is what you're ssh'ing into. Think username@server.&lt;/p&gt;
+&lt;p&gt;Location_on_host: What folder do you want to access? This is the path to that directory. Find the directory you want to access remotely and grab the pwd.&lt;/p&gt;
+&lt;p&gt;mount_point: You need a folder on your machine to act as a mirror. Nothing will be placed into this folder. But, when sshfs is going, this mount_point folder is going to be your portal into the remote folder. That means that the remote folder /Users/test/test2 becomes mount_point on your local machine. Whatever you do on mount_point happens to /Users/test/test2&lt;/p&gt;
+&lt;p&gt;That's it. Check mount_point and you'll see your remote folder.&lt;/p&gt;
+&lt;p&gt;All done? Don't forget to unmount it.
+    :::bash
+    umount mount_point&lt;/p&gt;
+&lt;p&gt;Enjoy.&lt;/p&gt;</summary><category term="technical"></category><category term="linux"></category></entry><entry><title>Leaving Browsers Behind</title><link href="/leaving-browsers-behing.html" rel="alternate"></link><updated>2013-02-12T21:05:00Z</updated><author><name>Alex Stephen</name></author><id>tag:,2013-02-12:leaving-browsers-behing.html</id><summary type="html">&lt;p&gt;I've been tweaking the "design" of this blog for quite a while now (I'm clearly not an art major). And the internet pointed out something interesting to me when I was going to tweak the solid color opacity.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span class="nt"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nt"&gt;0&lt;/span&gt;&lt;span class="nc"&gt;.75&lt;/span&gt;&lt;span class="o"&gt;;&lt;/span&gt;
+&lt;span class="nt"&gt;filter&lt;/span&gt;&lt;span class="nd"&gt;:alpha&lt;/span&gt;&lt;span class="o"&gt;(&lt;/span&gt;&lt;span class="nt"&gt;opacity&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="nt"&gt;40&lt;/span&gt;&lt;span class="o"&gt;);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Look at those two lines of code. They both mean the same thing. One is clearly much cleaner than the other. AnybodIE want to guess whIch browsEr8 uses the second line?&lt;/p&gt;
+&lt;p&gt;That wasn't very subtle. Now, this argument has been rehashed over and over again on Reddit so I won't go into that. Yes, IE8 and below were horribly standards noncompliant. But that's not my issue.&lt;/p&gt;
+&lt;p&gt;Do web developers have a moral obligation to continue to support these browsers? Do web developers have a moral obligation to force these users to upgrade by cutting them off?
+At what point should web developers sacrifice traffic to send a message.&lt;/p&gt;
+&lt;p&gt;Disclosure: I'm not cutting off anybody. It's lonely out here. I'm not cutting off anybody who scans through that many pages of Google results to find me.&lt;/p&gt;</summary><category term="technical"></category><category term="web"></category></entry><entry><title>Welcome to My Neck of the 100-Acre Woods</title><link href="/100-acre-wood.html" rel="alternate"></link><updated>2013-02-09T21:05:00Z</updated><author><name>Alex Stephen</name></author><id>tag:,2013-02-09:100-acre-wood.html</id><summary type="html">&lt;p&gt;&lt;img alt="welcome picture" src="/static/images/post2.jpg" /&gt;&lt;/p&gt;
+&lt;p&gt;Welcome to my part of the interwebs. I'm a college student majoring in Computer Science, looking to spread what little I know with the rest of the world. So first of all, what's with the name? Rambling Raptors...&lt;/p&gt;
+&lt;p&gt;First, I wanted to be clear that this will be a haphazard place. They'll be some coding. They'll be some ranting. They'll be the blogging equivalent of a circus juggling monkey on a unicycle. Possibly.&lt;/p&gt;
+&lt;p&gt;Secondly, there's alliteration and the obligatory pop-culture reference (so three reasons). People are defined by their actions. What I love defines me. So a statement about what I love describes me more than a flowery paragraph full of fancy jargon from a high-school English class. Jurassic Park is my favorite movie so...raptors.&lt;/p&gt;
+&lt;p&gt;There you go. Welcome to Rambling Raptors. Cue the John Williams score. We spared all expense.&lt;/p&gt;</summary><category term="posts"></category><category term="welcome"></category></entry><entry><title>Test Post</title><link href="/test-post.html" rel="alternate"></link><updated>2013-02-09T21:05:00Z</updated><author><name>Alex Stephen</name></author><id>tag:,2013-02-09:test-post.html</id><summary type="html">&lt;p&gt;This is a test post. Real content coming soon!&lt;/p&gt;</summary><category term="test"></category><category term="post"></category></entry></feed>
