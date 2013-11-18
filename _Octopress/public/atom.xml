@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Rambling Raptors]]></title>
+  <link href="http://www.ramblingraptors.com/atom.xml" rel="self"/>
+  <link href="http://www.ramblingraptors.com/"/>
+  <updated>2013-03-23T23:55:20-04:00</updated>
+  <id>http://www.ramblingraptors.com/</id>
+  <author>
+    <name><![CDATA[Alex Stephen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Favicons]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/03/13/favicons/"/>
+    <updated>2013-03-13T00:02:00-04:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/03/13/favicons</id>
+    <content type="html"><![CDATA[<p>They&#8217;re really the most utilized, least appreciated part of a good website. The favicon. Being visual creatures, the favicon is how we quickly sort tabs. They&#8217;re close to (if not) the most important branding statement of a website, yet nobody ever gives them their due credit. Being the near narcissist I am, I&#8217;d like to dedicate some space to the only decent design work I&#8217;ve ever done and where the inspiration came from.</p>
+
+<!-- more -->
+
+
+<p>First, I&#8217;d like to mention how complex the favicon has become. Initially, the favicon was a 16x16 icon file. Then came the png icons, which can use basically any size. Then comes the iOS devices, which of course need a iPhone and iPad icon (technically both retina and non-retina). Finally, Windows 8 comes into the mix with a tile icon. That&#8217;s 5 files if you&#8217;re following.</p>
+
+<p>Props to <a href="http://www.jonathantneal.com/blog/understand-the-favicon/">this amazing article</a> for the help and the history.</p>
+
+<p>Now, the favicon.</p>
+
+<p><img src="http://www.ramblingraptors.com/assets/images/favicon.png" title="'Ain't she beautiful?'" ></p>
+
+<p>There were two distinct obstacles that had to be overcome. First, my design chops. Second, the amount of information that could be contained in 256 pixels. And third, my design chops. The inspiration came from genetics. Back in high school, most people learn about genetics in a high school biology class. When they learn about dominant and recessive genes, they associate them with R and r respectively. That kinda dawned on me. When a person has both a dominant and recessive gene, their genotype is displayed as Rr. Typographically, it looks really neat with the right font. And plus there&#8217;s a very profound statement about bridging the dichotomy between life and programming&#8230; or something like that. As soon as I have it solidified, that&#8217;ll be my new reason.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Dropbox for SSH]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/02/18/dropbox-for-ssh/"/>
+    <updated>2013-02-18T23:52:00-05:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/02/18/dropbox-for-ssh</id>
+    <content type="html"><![CDATA[<p>At the university level, a serious problem occurs when you want to code on your computer: you have to compile it elsewhere. The official university complier might be newer, older, or you just want to be super safe. So what do you do? You could either:</p>
+
+<pre><code>- Use a flash drive (so low tech)
+- Not code on your laptop (not gonna happen)
+- Treat your University File System as a Local Drive
+</code></pre>
+
+<p>Enter sshfs. You can mount any remote file system over ssh and then treat it as if it were a separate hard drive. Think Dropbox for anything. So how does one set it up?
+First:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install sshfs</span></code></pre></td></tr></table></div></figure>
+
+
+<p>On a Mac, that&#8217;ll get you installed. Not using Homebrew? Fix that.</p>
+
+<p>Next comes the incredibly lengthy command. I&#8217;m gonna break it up into parts:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sshfs hostname:location_on_host mount_point</span></code></pre></td></tr></table></div></figure>
+
+
+<p>One step at a time.
+Hostname: This is what you&#8217;re ssh&#8217;ing into. Think username@server.</p>
+
+<p>Location_on_host: What folder do you want to access? This is the path to that directory. Find the directory you want to access remotely and grab the pwd.</p>
+
+<p>mount_point: You need a folder on your machine to act as a mirror. Nothing will be placed into this folder. But, when sshfs is going, this mount_point folder is going to be your portal into the remote folder. That means that the remote folder /Users/test/test2 becomes mount_point on your local machine. Whatever you do on mount_point happens to /Users/test/test2</p>
+
+<p>That&#8217;s it. Check mount_point and you&#8217;ll see your remote folder.</p>
+
+<p>All done? Don&#8217;t forget to unmount it.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>umount mount_point</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Enjoy.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Leaving Browsers Behind]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/02/12/why-so-octopress/"/>
+    <updated>2013-02-12T23:22:00-05:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/02/12/why-so-octopress</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve been tweaking the &#8220;design&#8221; of this blog for quite a while now (I&#8217;m clearly not an art major). And the internet pointed out something interesting to me when I was going to tweak the solid color opacity.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>opacity: 0.75;
+</span><span class='line'>  filter:alpha(opacity=40);</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Look at those two lines of code. They both mean the same thing. One is clearly much cleaner than the other. AnybodIE want to guess whIch browsEr8 uses the second line?</p>
+
+<p>That wasn&#8217;t very subtle. Now, this argument has been rehashed over and over again on Reddit so I won&#8217;t go into that. Yes, IE8 and below were horribly standards noncompliant. But that&#8217;s not my issue.</p>
+
+<p>Do web developers have a moral obligation to continue to support these browsers? Do web developers have a moral obligation to force these users to upgrade by cutting them off?
+At what point should web developers sacrifice traffic to send a message.</p>
+
+<p>Disclosure: I&#8217;m not cutting off anybody. It&#8217;s lonely out here. I&#8217;m not cutting off anybody who scans through that many pages of Google results to find me.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome to My Neck of the 100-Acre Woods]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/02/09/welcome-to-my-neck-of-the-100-acre-woods/"/>
+    <updated>2013-02-09T23:58:00-05:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/02/09/welcome-to-my-neck-of-the-100-acre-woods</id>
+    <content type="html"><![CDATA[<p><img src="assets/images/post2.jpg" width="1500" height="1200" title="&#34;Copyright saikofish, Flickr&#34;" alt="&#34;Copyright saikofish, Flickr&#34;">
+Welcome to my part of the interwebs. I&#8217;m a college student majoring in Computer Science, looking to spread what little I know with the rest of the world. So first of all, what&#8217;s with the name? Rambling Raptors&#8230;</p>
+
+<p>First, I wanted to be clear that this will be a haphazard place. They&#8217;ll be some coding. They&#8217;ll be some ranting. They&#8217;ll be the blogging equivalent of a circus juggling monkey on a unicycle. Possibly.</p>
+
+<p>Secondly, there&#8217;s alliteration and the obligatory pop-culture reference (so three reasons). People are defined by their actions. What I love defines me. So a statement about what I love describes me more than a flowery paragraph full of fancy jargon from a high-school English class. Jurassic Park is my favorite movie so&#8230;raptors.</p>
+
+<p>There you go. Welcome to Rambling Raptors. Cue the John Williams score. We spared all expense.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Test Post]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/02/09/test/"/>
+    <updated>2013-02-09T21:05:00-05:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/02/09/test</id>
+    <content type="html"><![CDATA[<p>This is a test post. Real content coming soon!</p>
+]]></content>
+  </entry>
+  
+</feed>

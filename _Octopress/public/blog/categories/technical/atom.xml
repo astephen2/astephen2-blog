@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Technical | Rambling Raptors]]></title>
+  <link href="http://www.ramblingraptors.com/blog/categories/technical/atom.xml" rel="self"/>
+  <link href="http://www.ramblingraptors.com/"/>
+  <updated>2013-03-23T23:55:20-04:00</updated>
+  <id>http://www.ramblingraptors.com/</id>
+  <author>
+    <name><![CDATA[Alex Stephen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Dropbox for SSH]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/02/18/dropbox-for-ssh/"/>
+    <updated>2013-02-18T23:52:00-05:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/02/18/dropbox-for-ssh</id>
+    <content type="html"><![CDATA[<p>At the university level, a serious problem occurs when you want to code on your computer: you have to compile it elsewhere. The official university complier might be newer, older, or you just want to be super safe. So what do you do? You could either:</p>
+
+<pre><code>- Use a flash drive (so low tech)
+- Not code on your laptop (not gonna happen)
+- Treat your University File System as a Local Drive
+</code></pre>
+
+<p>Enter sshfs. You can mount any remote file system over ssh and then treat it as if it were a separate hard drive. Think Dropbox for anything. So how does one set it up?
+First:
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>brew install sshfs</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>On a Mac, that'll get you installed. Not using Homebrew? Fix that.</p>
+
+<p>Next comes the incredibly lengthy command. I'm gonna break it up into parts:
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sshfs hostname:location_on_host mount_point</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>One step at a time.
+Hostname: This is what you're ssh'ing into. Think username@server.</p>
+
+<p>Location_on_host: What folder do you want to access? This is the path to that directory. Find the directory you want to access remotely and grab the pwd.</p>
+
+<p>mount_point: You need a folder on your machine to act as a mirror. Nothing will be placed into this folder. But, when sshfs is going, this mount_point folder is going to be your portal into the remote folder. That means that the remote folder /Users/test/test2 becomes mount_point on your local machine. Whatever you do on mount_point happens to /Users/test/test2</p>
+
+<p>That's it. Check mount_point and you'll see your remote folder.</p>
+
+<p>All done? Don't forget to unmount it.
+<div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>umount mount_point</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Enjoy.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Leaving Browsers Behind]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/02/12/why-so-octopress/"/>
+    <updated>2013-02-12T23:22:00-05:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/02/12/why-so-octopress</id>
+    <content type="html"><![CDATA[<p>I've been tweaking the "design" of this blog for quite a while now (I'm clearly not an art major). And the internet pointed out something interesting to me when I was going to tweak the solid color opacity.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>opacity: 0.75;
+</span><span class='line'>filter:alpha(opacity=40);
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Look at those two lines of code. They both mean the same thing. One is clearly much cleaner than the other. AnybodIE want to guess whIch browsEr8 uses the second line?</p>
+
+<p>That wasn't very subtle. Now, this argument has been rehashed over and over again on Reddit so I won't go into that. Yes, IE8 and below were horribly standards noncompliant. But that's not my issue.</p>
+
+<p>Do web developers have a moral obligation to continue to support these browsers? Do web developers have a moral obligation to force these users to upgrade by cutting them off?
+At what point should web developers sacrifice traffic to send a message.</p>
+
+<p>Disclosure: I'm not cutting off anybody. It's lonely out here. I'm not cutting off anybody who scans through that many pages of Google results to find me.</p>
+]]></content>
+  </entry>
+  
+</feed>

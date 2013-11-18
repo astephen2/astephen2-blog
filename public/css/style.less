@@ -1,0 +1,571 @@
+@color1: #ff0;
+@color2: @color9; //Bottom border color. Was #000;
+@color3: #dd1144;
+@color4: #c0c0c0;
+@color5: #333; //Text color. Was #333.
+@color6: #999;
+@color7: #555;
+@color8: #222;
+@color9: #c0392b; //Header footer color. Was #111  #2980b9 #8e44ad
+@color10: @color11; //About Font Color
+@color11: #fff;
+@color12: #123456;
+@color13: #ccc; //Grey font color
+@color14: #f8ff6e;
+@color15: #08c;
+@color16: #c00;
+@color17: #eee;
+@color18: #cc0000;
+@color19: #ffe6e6;
+@color20: #3498db; //About message background. Was #272727
+
+@font1: 'Open Sans', sans-serif;
+@font2: italic 1.2em/1.4 Georgia,Times,serif;
+@font3: 'Merriweather', serif;
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+audio, canvas, video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+    audio:not([controls]) {
+        display: none;
+        height: 0;
+    }
+
+[hidden] {
+    display: none;
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+html, button, input, select, textarea {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a:focus {
+    outline: thin dotted;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.83em 0;
+}
+
+h3 {
+    font-size: 1.17em;
+    margin: 1em 0;
+}
+
+h4 {
+    font-size: 1em;
+    margin: 1.33em 0;
+}
+
+h5 {
+    font-size: 0.83em;
+    margin: 1.67em 0;
+}
+
+h6 {
+    font-size: 0.75em;
+    margin: 2.33em 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+b, strong {
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 1em 40px;
+}
+
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background: @color1;
+    color: @color2;
+}
+
+p, pre {
+    margin: 1em 0;
+}
+
+pre, code, kbd, samp {
+    font-family: monospace, serif;
+    _font-family: 'courier new', monospace;
+    font-size: 1em;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+code {
+    color: @color3;
+}
+
+q {
+    quotes: none;
+}
+
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+small {
+    font-size: 75%;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+dl, menu, ol, ul {
+    margin: 1em 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+menu, ol, ul {
+    padding: 0 0 0 40px;
+}
+
+nav ul, nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}
+
+figure {
+    margin: 0;
+}
+
+form {
+    margin: 0;
+}
+
+fieldset {
+    border: 1px solid @color4;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+    border: 0;
+    padding: 0;
+    white-space: normal;
+    *margin-left: -7px;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+    *vertical-align: middle;
+}
+
+button, input {
+    line-height: normal;
+}
+
+    button, input[type="button"], input[type="reset"], input[type="submit"] {
+        cursor: pointer;
+        -webkit-appearance: button;
+        *overflow: visible;
+    }
+
+        button[disabled], input[disabled] {
+            cursor: default;
+        }
+
+    input[type="checkbox"], input[type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+        *height: 13px;
+        *width: 13px;
+    }
+
+    input[type="search"] {
+        -webkit-appearance: textfield;
+        -moz-box-sizing: content-box;
+        -webkit-box-sizing: content-box;
+        box-sizing: content-box;
+    }
+
+        input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+            -webkit-appearance: none;
+        }
+
+    button::-moz-focus-inner, input::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body, button, input, select, textarea {
+    font-family: @font1;
+    color: @color5;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.61;
+    font-weight: 400;
+}
+
+time {
+    color: @color6;
+    display: block;
+    margin-bottom: 1em;
+}
+
+blockquote {
+    font: italic 1.2em/1.4 Georgia,Times,serif;
+    color: @color7;
+}
+
+    blockquote:before {
+        position: absolute;
+        margin: -0.2em 0 0 -0.55em;
+        font-size: 3em;
+        content: '\201C';
+        color: @color8;
+    }
+
+img {
+    max-width: 100%;
+}
+
+    img.left, img.right {
+        max-width: 35%;
+    }
+
+    img.left {
+        float: left;
+        margin: 0 2em 0.5em -2em;
+    }
+
+    img.right {
+        float: right;
+        margin: 0 -2em 0.5em 1em;
+    }
+
+    img.center {
+        display: block;
+        margin: 0 auto;
+        max-width: 70%;
+    }
+
+#map {
+    height: 300px;
+}
+
+.embed {
+    position: relative;
+    overflow: hidden;
+    margin: 1em 0;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+    .embed iframe, .embed object, .embed embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+body, html {
+    background: @color9;
+}
+
+[role=banner], [role=contentinfo], .about {
+    color: @color10;
+}
+
+.about {
+    background: @color20;
+    border-bottom: 1px solid @color20;
+    border-top: 1px solid @color2;
+}
+
+    .about ul {
+        list-style: circle;
+        padding: 0;
+    }
+
+    .about h2 {
+        color: @color11;
+    }
+
+[role=banner], [role=contentinfo] {
+    font-family: @font3;
+    color: @color11;
+}
+
+.content {
+    max-width: 55em;
+    margin: 0 auto;
+    padding: 1em 2em;
+}
+
+[role=main] {
+    border-bottom: 1px solid @color2;
+    background: @color11;
+}
+
+.posts article {
+    border-top: 1px solid @color13;
+    padding: 1em 0;
+}
+
+    .posts article:first-child {
+        border: 0;
+    }
+
+.posts h2 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.posts time {
+    float: right;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    margin-left: 1em;
+}
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget iframe {
+    width: 100% !important;
+}
+
+.fb_iframe_widget {
+    margin: 1em 0 -1em;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+{
+    .fb_iframe_widget {
+        width: auto !important;
+        display: block !important;
+        margin: 0 -2em;
+    }
+}
+
+::selection {
+    background: @color14;
+    color: @color8;
+    text-shadow: none;
+}
+
+a {
+    text-decoration: none;
+    color: @color15;
+    border-bottom: 1px solid @color15;
+}
+
+    a:hover, a:focus, a:active {
+        color: @color16;
+        border-color: @color16;
+        outline: 0;
+    }
+
+[role=banner] a, [role=contentinfo] a, .about a {
+    border: 0;
+    color: @color11;
+}
+
+    [role=banner] a:hover, [role=banner] a:focus, [role=banner] a:active, [role=contentinfo] a:hover, [role=contentinfo] a:focus, [role=contentinfo] a:active, .about a:hover, .about a:focus, .about a:active {
+        color: @color17;
+    }
+
+[role=banner] ::selection, [role=contentinfo] ::selection, .about ::selection {
+    background: @color14;
+    color: @color11;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+    border: 0;
+    color: @color15;
+}
+
+    h1 a:hover, h1 a:focus, h1 a:active, h2 a:hover, h2 a:focus, h2 a:active, h3 a:hover, h3 a:focus, h3 a:active, h4 a:hover, h4 a:focus, h4 a:active {
+        color: @color16;
+    }
+
+[role=navigation] {
+    float: right;
+    margin-left: 20px;
+}
+
+.alert {
+    background: @color18;
+    color: #ffcccc;
+}
+
+    .alert strong {
+        color: @color11;
+    }
+
+    .alert a {
+        color: @color19;
+        border-color: @color19;
+    }
+
+        .alert a:hover, .alert a:focus {
+            color: @color11;
+            border-color: @color11;
+        }
+
+.links li {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    margin-right: .5em;
+}
+
+.links a {
+    display: block;
+    border: 0;
+    background: url("../images/icons.png");
+    width: 32px;
+    height: 32px;
+    text-indent: -9999em;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
+{
+    .links a {
+        background: url("../images/icons@2x.png");
+        background-size: 143px 32px;
+    }
+}
+
+.links a:hover, .links a:focus, .links a:active {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+    opacity: 0.7;
+}
+
+.links .linkedin {
+    background-position: -42px 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
+{
+    .links .linkedin {
+        background-position: -37px 0;
+    }
+}
+
+.links .github {
+    background-position: -84px 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
+{
+    .links .github {
+        background-position: -74px 0;
+    }
+}
+
+.links .google {
+    background-position: -126px 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5)
+{
+    .links .google {
+        background-position: -111px 0;
+    }
+}
+
+td.line-numbers {
+    vertical-align: top;
+}
+
+.profile {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+@media screen and (max-width:720px)
+{
+    .posts time {
+        display: none;
+    }
+
+    .profile {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+}

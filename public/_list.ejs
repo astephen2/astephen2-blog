@@ -1,0 +1,9 @@
+<section class="posts">
+    <% var posts = public.posts.data;
+       for(var post in posts) { %>
+            <article>
+                <time datetime="<%- posts[post].date %>"><%- posts[post].date %></time>
+                <h2><a href="/posts/<%- post %>"><%- posts[post].title %></a></h2>
+            </article>
+    <% } %>
+</section>

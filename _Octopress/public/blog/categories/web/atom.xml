@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Web | Rambling Raptors]]></title>
+  <link href="http://www.ramblingraptors.com/blog/categories/web/atom.xml" rel="self"/>
+  <link href="http://www.ramblingraptors.com/"/>
+  <updated>2013-03-23T23:55:20-04:00</updated>
+  <id>http://www.ramblingraptors.com/</id>
+  <author>
+    <name><![CDATA[Alex Stephen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Leaving Browsers Behind]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/02/12/why-so-octopress/"/>
+    <updated>2013-02-12T23:22:00-05:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/02/12/why-so-octopress</id>
+    <content type="html"><![CDATA[<p>I've been tweaking the "design" of this blog for quite a while now (I'm clearly not an art major). And the internet pointed out something interesting to me when I was going to tweak the solid color opacity.</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;pre>&lt;code>opacity: 0.75;
+</span><span class='line'>filter:alpha(opacity=40);
+</span><span class='line'>&lt;/code>&lt;/pre>
+</span><span class='line'>
+</span><span class='line'>&lt;p></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Look at those two lines of code. They both mean the same thing. One is clearly much cleaner than the other. AnybodIE want to guess whIch browsEr8 uses the second line?</p>
+
+<p>That wasn't very subtle. Now, this argument has been rehashed over and over again on Reddit so I won't go into that. Yes, IE8 and below were horribly standards noncompliant. But that's not my issue.</p>
+
+<p>Do web developers have a moral obligation to continue to support these browsers? Do web developers have a moral obligation to force these users to upgrade by cutting them off?
+At what point should web developers sacrifice traffic to send a message.</p>
+
+<p>Disclosure: I'm not cutting off anybody. It's lonely out here. I'm not cutting off anybody who scans through that many pages of Google results to find me.</p>
+]]></content>
+  </entry>
+  
+</feed>

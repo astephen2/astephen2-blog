@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Posts | Rambling Raptors]]></title>
+  <link href="http://www.ramblingraptors.com/blog/categories/posts/atom.xml" rel="self"/>
+  <link href="http://www.ramblingraptors.com/"/>
+  <updated>2013-03-23T23:55:20-04:00</updated>
+  <id>http://www.ramblingraptors.com/</id>
+  <author>
+    <name><![CDATA[Alex Stephen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Welcome to My Neck of the 100-Acre Woods]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/02/09/welcome-to-my-neck-of-the-100-acre-woods/"/>
+    <updated>2013-02-09T23:58:00-05:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/02/09/welcome-to-my-neck-of-the-100-acre-woods</id>
+    <content type="html"><![CDATA[<p><img src="assets/images/post2.jpg" width="1500" height="1200" title="&#34;Copyright saikofish, Flickr&#34;" alt="&#34;Copyright saikofish, Flickr&#34;">
+Welcome to my part of the interwebs. I'm a college student majoring in Computer Science, looking to spread what little I know with the rest of the world. So first of all, what's with the name? Rambling Raptors...</p>
+
+<p>First, I wanted to be clear that this will be a haphazard place. They'll be some coding. They'll be some ranting. They'll be the blogging equivalent of a circus juggling monkey on a unicycle. Possibly.</p>
+
+<p>Secondly, there's alliteration and the obligatory pop-culture reference (so three reasons). People are defined by their actions. What I love defines me. So a statement about what I love describes me more than a flowery paragraph full of fancy jargon from a high-school English class. Jurassic Park is my favorite movie so...raptors.</p>
+
+<p>There you go. Welcome to Rambling Raptors. Cue the John Williams score. We spared all expense.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Test Post]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/02/09/test/"/>
+    <updated>2013-02-09T21:05:00-05:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/02/09/test</id>
+    <content type="html"><![CDATA[<p>This is a test post. Real content coming soon!</p>
+]]></content>
+  </entry>
+  
+</feed>

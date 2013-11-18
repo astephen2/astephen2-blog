@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Test | Rambling Raptors]]></title>
+  <link href="http://www.ramblingraptors.com/blog/categories/test/atom.xml" rel="self"/>
+  <link href="http://www.ramblingraptors.com/"/>
+  <updated>2013-03-23T23:55:20-04:00</updated>
+  <id>http://www.ramblingraptors.com/</id>
+  <author>
+    <name><![CDATA[Alex Stephen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Test Post]]></title>
+    <link href="http://www.ramblingraptors.com/blog/2013/02/09/test/"/>
+    <updated>2013-02-09T21:05:00-05:00</updated>
+    <id>http://www.ramblingraptors.com/blog/2013/02/09/test</id>
+    <content type="html"><![CDATA[<p>This is a test post. Real content coming soon!</p>
+]]></content>
+  </entry>
+  
+</feed>

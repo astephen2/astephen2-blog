@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>http://www.ramblingraptors.com/blog/2013/02/09/test/</loc>
+        <lastmod>2013-03-02T15:28:00-05:00</lastmod>
+    </url>
+    <url>
+        <loc>
+            http://www.ramblingraptors.com/blog/2013/02/09/welcome-to-my-neck-of-the-100-acre-woods/
+        </loc>
+        <lastmod>2013-03-11T23:23:33-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.ramblingraptors.com/blog/2013/02/12/why-so-octopress/</loc>
+        <lastmod>2013-03-02T15:28:00-05:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.ramblingraptors.com/blog/2013/02/18/dropbox-for-ssh/</loc>
+        <lastmod>2013-03-13T00:21:38-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.ramblingraptors.com/blog/2013/03/13/favicons/</loc>
+        <lastmod>2013-03-23T23:50:11-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.ramblingraptors.com/blog/archives/</loc>
+        <lastmod>2013-03-23T23:50:11-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.ramblingraptors.com/</loc>
+        <lastmod>2013-03-23T23:50:11-04:00</lastmod>
+    </url>
+    <url>
+        <loc>http://www.ramblingraptors.com/robots.txt</loc>
+        <lastmod>2013-03-02T15:26:08-05:00</lastmod>
+    </url>
+</urlset>
