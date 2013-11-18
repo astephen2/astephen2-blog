@@ -1,5 +1,5 @@
 <section class="posts">
-    <% var posts = public.posts.data;
+    <% var posts = public.posts._data;
        for(var post in posts) { %>
             <article>
                 <time datetime="<%- posts[post].date %>"><%- posts[post].date %></time>
