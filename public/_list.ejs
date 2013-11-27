@@ -3,7 +3,7 @@
        for(var post in posts) { %>
             <article>
                 <time datetime="<%- posts[post].date %>"><%- posts[post].date %></time>
-                <h2><a href="/posts/<%- post %>"><%- posts[post].title %></a></h2>
+                <h2><a href="/posts/<%- post %>" class="blogPost <%- post %>"><%- posts[post].title %></a></h2>
             </article>
     <% } %>
 </section>
