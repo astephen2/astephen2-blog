@@ -1,3 +1,0 @@
-def pull():
-    ("cd ~/webapps/blog");
-    ("sudo git pull")
