@@ -12,8 +12,14 @@
         <link rel="icon" href="/images/favicon.ico"  type='image/x-icon'/>
         <link rel="shortcut icon" href="/images/favicon.ico"  type='image/x-icon'/>
 
-        <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css' rel='stylesheet' type='text/css'>
-        <link href='/css/site.css' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,600" />
+        <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+        <link href='http://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="/css/style.css" media="all" />
         <link rel="alternate" href="/rss.xml" type="application/rss+xml" />
 
         <!--[if lt IE 9]>
@@ -23,15 +29,19 @@
         <%- partial("_mixPanel") %>
     </head>
     <body>
-        <section class="header">
-            <a href="/">Alex Stephen<a>
-            <img src="/images/dinosaur.png">
-            <div class="middle">
+
+        <%- partial("_header") %>
+        <%- current.source == 'index' ?   partial("_about") : ''  %>
+
+        <div role="main">
+            <div class="content">
+
+               <%- yield %>
 
             </div>
-        </section>
-        <section class="content">
-            <%- yield %>
-        </section>
+        </div>
+
+        <%- partial("_footer") %>
+
     </body>
 </html>

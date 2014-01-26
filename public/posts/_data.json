@@ -1,32 +1,32 @@
 {
   "housing": {
     "title": "College Housing",
-    "date" : "2013-11-27"
+    "date" : "November 27, 2013"
   },
 
   "favicons": {
     "title": "Favicons",
-    "date" : "2013-03-13"
+    "date" : "March 13, 2013"
   },
 
   "dropbox-for-ssh": {
     "title": "Dropbox for SSH",
-    "date" : "2013-02-18"
+    "date" : "Febuary 18, 2013"
   },
 
   "leaving-browsers": {
     "title": "Leaving Browsers Behind",
-    "date" : "2013-02-12"
+    "date" : "Febuary 12, 2013"
   },
 
   "100-acres": {
     "title": "Welcome to My Neck of the 100 Acre Woods",
-    "date" : "2013-02-09"
+    "date" : "Febuary 9, 2013"
   },
 
   "test": {
     "title": "Test Post",
-    "date": "2013-02-09"
+    "date": "Febuary 9, 2013"
   }
 
 }
